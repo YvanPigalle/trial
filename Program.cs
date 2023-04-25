@@ -1,5 +1,6 @@
 ﻿//Задача:
-//Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее, а какое меньшее.
+//Напишите программу, которая на вход принимает два числа и выдаёт, какое число большее,
+// а какое меньшее.
 
 
 
@@ -29,7 +30,7 @@ else num_1 = num_2;
 //Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
 
-
+/*
 int max = 0;
 
 Console.Write("Insert your first number: ");
@@ -55,3 +56,47 @@ if (num3 > max)
 }
 
 Console.WriteLine("The biggest number is " + max);
+*/
+
+
+//Задача
+//Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным 
+//(делится ли оно на два без остатка)
+
+
+/*
+Console.Write("Insert your number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int del = num % 2;
+
+if (del == 0)
+{
+    Console.WriteLine("YEAH");
+}
+else
+{
+    Console.WriteLine("NOPE");
+}
+*/
+
+
+
+//Задача
+// Напишите программу, которая на вход принимает число (N), 
+//а на выходе показывает все чётные числа от 1 до N
+
+
+Console.Write("Insert your number: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+int dubN = 2;
+
+if(num > 1)
+{
+    while(dubN <= num)
+    {
+        Console.Write(dubN + " ");
+        dubN += 2;
+    }
+}
